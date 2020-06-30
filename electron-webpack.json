@@ -1,0 +1,17 @@
+{
+  "commonSourceDirectory": "src",
+  "staticSourceDirectory": "public",
+  "title": true,
+  "whiteListedModules": [
+    "react",
+    "react-dom",
+    "react-router-dom",
+    "react-reudx"
+  ],
+  "main": {
+    "sourceDirectory": "main"
+  },
+  "renderer": {
+    "sourceDirectory": null
+  }
+}
