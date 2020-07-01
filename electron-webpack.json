@@ -1,5 +1,4 @@
 {
-  "commonSourceDirectory": "src",
   "staticSourceDirectory": "public",
   "title": true,
   "whiteListedModules": [
@@ -9,7 +8,7 @@
     "react-reudx"
   ],
   "main": {
-    "sourceDirectory": "main"
+    "sourceDirectory": "src/main"
   },
   "renderer": {
     "sourceDirectory": null

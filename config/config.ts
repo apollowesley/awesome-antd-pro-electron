@@ -6,8 +6,8 @@ const { REACT_APP_ENV } = process.env;
 export default defineConfig({
   // settings for electron
   publicPath: './',
-  outputPath: "dist",
-  history: { 
+  outputPath: 'dist/renderer',
+  history: {
     type: 'hash',
   },
   hash: true,
@@ -105,4 +105,10 @@ export default defineConfig({
   manifest: {
     basePath: '/',
   },
+  chainWebpack(memo, { env, webpack, createCSSRule }) {
+    // 设置 alias
+    memo.resolve.alias.set('author', 'xingwenju');
+    // 删除 umi 内置插件
+    memo.target('electron-renderer');
+  }
 });

@@ -2,7 +2,6 @@
   "name": "ant-design-pro-electron",
   "version": "0.1.0",
   "private": false,
-  "main": "dist/main/main.js",
   "description": "An out-of-box UI solution for enterprise applications with electron",
   "scripts": {
     "analyze": "cross-env ANALYZE=1 umi build",
@@ -37,7 +36,7 @@
     "main:electron": "electron-webpack",
     "build:electron": "electron-builder",
     "dist:electron": "npm run main:electron && npm run build:electron",
-    "dist:dir": "npm run dist:electron --dir -c.compression=store -c.mac.identity=null"
+    "dist:dir": "npm run build:electron --dir -c.compression=store -c.mac.identity=null"
   },
   "husky": {
     "hooks": {
@@ -120,13 +119,10 @@
     "node": ">=10.0.0"
   },
   "build": {
-    "productName": "umi-electron-monitor",
-    "appId": "org.linuxing3.umi-electron-monitor",
+    "productName": "ant-design-pro-electron",
+    "appId": "org.linuxing3.ant-design-pro-electron",
     "directories": {
       "output": "electron_build"
-    },
-    "files": [
-      "dist"
-    ]
+    }
   }
 }
