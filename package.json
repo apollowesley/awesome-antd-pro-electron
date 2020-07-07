@@ -103,7 +103,7 @@
     "check-prettier": "^1.0.3",
     "cross-env": "^5.2.0",
     "cross-port-killer": "^1.1.1",
-    "electron": "^5.0.6",
+    "electron": "^9.1.0",
     "electron-builder": "^20.44.4",
     "electron-devtools-installer": "^2.2.4",
     "electron-webpack-ts": "^3.2.0",
